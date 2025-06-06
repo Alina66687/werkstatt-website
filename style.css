@@ -121,3 +121,15 @@ footer {
   transform: scale(1.1);
   transition: 0.3s ease;
 }
+
+.whatsapp {
+  font-size: 0; /* уберёт любые случайные текстовые символы */
+  overflow: hidden;
+  text-indent: -9999px; /* если вдруг текст всё же есть */
+}
+
+.whatsapp::before,
+.whatsapp::after {
+  content: none !important;
+}
+
