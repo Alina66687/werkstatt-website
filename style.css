@@ -115,11 +115,6 @@ footer {
 
 .whatsapp {
   background-image: url("img/whatsapp.png");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
 }
 
 .whatsapp:hover {
