@@ -41,22 +41,38 @@ header {
   text-decoration: underline;
 }
 
-/* Меню */
+/* Horizontales Menü (Deutsch) */
 nav {
-  background: #e0e0e0;
-  padding: 10px;
-  text-align: center;
+  background-color: #ddd;
+  padding: 0;
 }
 
-nav a {
-  margin: 0 15px;
-  color: #1e2a38;
+nav .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav .menu li {
+  margin: 0;
+}
+
+nav .menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
   text-decoration: none;
+  font-size: 16px;
   font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav .menu a:hover {
+  background-color: #bbb;
+  color: #000;
 }
 
 /* Секции */
