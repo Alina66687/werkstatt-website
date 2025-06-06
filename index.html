@@ -1,49 +1,53 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Автосервис Müller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Автосервис Müller</h1>
+      <p>Ремонт и обслуживание автомобилей в Schweinfurt</p>
+    </div>
+  </header>
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  <nav class="container">
+    <a href="#services">Услуги</a>
+    <a href="#about">О нас</a>
+    <a href="#contact">Контакты</a>
+  </nav>
 
-header {
-  background-color: #1e2a38;
-  color: white;
-  padding: 40px 0;
-  text-align: center;
-}
+  <section id="about" class="container">
+    <h2>О нас</h2>
+    <p>Мы — семейный автосервис с многолетним опытом. Надежность, честность и качество — наш принцип.</p>
+  </section>
 
-nav {
-  background: #e0e0e0;
-  padding: 10px;
-  text-align: center;
-}
+  <section id="services" class="container">
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Диагностика и ремонт двигателя</li>
+      <li>Замена масла и фильтров</li>
+      <li>Шиномонтаж и балансировка</li>
+      <li>Ремонт подвески</li>
+      <li>ТО и подготовка к TÜV</li>
+    </ul>
+  </section>
 
-nav a {
-  margin: 0 15px;
-  color: #1e2a38;
-  text-decoration: none;
-  font-weight: bold;
-}
+  <section id="contact" class="container">
+    <h2>Контакты</h2>
+    <p>📍 Schweinfurt, Musterstraße 1</p>
+    <p>📞 +49 123 4567890</p>
+    <p>✉️ kontakt@mueller-werkstatt.de</p>
 
-section {
-  background: white;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
+    <iframe src="https://maps.google.com/maps?q=Schweinfurt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="250" style="border:0;" allowfullscreen></iframe>
+  </section>
 
-footer {
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-  margin: 40px 0 20px;
-}
+  <footer class="container">
+    <p>&copy; 2025 Автосервис Müller. Все права защищены.</p>
+  </footer>
+</body>
+</html>
