@@ -1,13 +1,12 @@
-/* Общие настройки */
+/* Global dark theme */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #111;
+  color: #f0f0f0;
 }
 
-/* Центрирование и отступы */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -15,7 +14,6 @@ body {
   padding: 20px;
 }
 
-/* Шапка */
 header {
   background-color: #1e2a38;
   color: white;
@@ -23,7 +21,6 @@ header {
   text-align: center;
 }
 
-/* Переключатель языков */
 .lang-switch {
   margin-top: 10px;
   text-align: right;
@@ -41,9 +38,8 @@ header {
   text-decoration: underline;
 }
 
-/* Горизонтальное меню */
 nav {
-  background-color: #ddd;
+  background-color: #222;
   padding: 0;
 }
 
@@ -63,7 +59,7 @@ nav .menu li {
 nav .menu a {
   display: block;
   padding: 15px 20px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -71,24 +67,22 @@ nav .menu a {
 }
 
 nav .menu a:hover {
-  background-color: #bbb;
-  color: #000;
+  background-color: #444;
+  color: #fff;
 }
 
-/* Секции */
 section {
-  background: white;
+  background: #1a1a1a;
   margin: 20px 0;
   padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 0;
+  box-shadow: none;
 }
 
-/* Футер */
 footer {
   text-align: center;
   font-size: 14px;
-  color: #777;
+  color: #999;
   margin: 40px 0 20px;
 }
 
@@ -115,6 +109,9 @@ footer {
 
 .whatsapp {
   background-image: url("img/whatsapp.png");
+  font-size: 0;
+  overflow: hidden;
+  text-indent: -9999px;
 }
 
 .whatsapp:hover {
@@ -122,14 +119,7 @@ footer {
   transition: 0.3s ease;
 }
 
-.whatsapp {
-  font-size: 0; /* уберёт любые случайные текстовые символы */
-  overflow: hidden;
-  text-indent: -9999px; /* если вдруг текст всё же есть */
-}
-
-.whatsapp::before,
-.whatsapp::after {
+.whatsapp::before, .whatsapp::after {
   content: none !important;
 }
 
@@ -154,19 +144,19 @@ footer {
 
 .cards-column {
   flex: 2;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
 }
 
 .service-card {
-  position: relative;
-  width: 280px;
-  height: 200px;
-  overflow: hidden;
+  background-color: #222;
   border: 1px solid #333;
-  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  transition: 0.3s ease;
 }
 
 .service-card img {
@@ -174,7 +164,7 @@ footer {
   height: 100%;
   object-fit: cover;
   filter: grayscale(1);
-  transition: filter 0.3s, transform 0.3s;
+  transition: 0.3s ease;
 }
 
 .service-card:hover img {
@@ -185,24 +175,23 @@ footer {
 .card-text {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,0.6);
-  padding: 10px;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 15px 20px;
+  text-align: left;
 }
 
 .card-text h3 {
   margin: 0;
   font-size: 16px;
-  text-transform: uppercase;
+  color: #fff;
 }
 
 .card-text a {
-  display: inline-block;
   margin-top: 8px;
-  padding: 5px 10px;
+  display: inline-block;
+  color: #fff;
   border: 1px solid white;
-  color: white;
+  padding: 5px 10px;
   text-decoration: none;
   font-size: 14px;
 }
