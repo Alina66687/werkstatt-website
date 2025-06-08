@@ -164,7 +164,7 @@ footer {
 /* Über uns + карточки */
 .about-cards {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
   padding: 40px 5%;
