@@ -154,40 +154,44 @@ footer {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* ставит блоки вертикально */
   gap: 40px;
-  justify-content: space-between;
+  padding: 40px;
 }
 
+/* Отступы для текста */
 .left-column {
-  flex: 1;
-  min-width: 280px;
-  max-width: 400px;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
+/* Центровка карточек */
 .cards-column {
-  flex: 2;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 .service-card {
   background-color: #222;
-  border: 1px solid #333;
-  position: relative;
+  border-radius: 8px;
   overflow: hidden;
-  height: 200px;
-  transition: 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 .service-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(1);
-  transition: 0.3s ease;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  padding: 15px;
+  text-align: center;
 }
 
 .service-card:hover img {
