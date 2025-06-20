@@ -252,12 +252,6 @@ footer {
   color: #fff;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-
-  /* Улучшенное свечение без размытия */
-  text-shadow:
-    0 1px 2px rgba(0,0,0,0.8),
-    0 0 4px rgba(255,255,255,0.2);
-
   /* Чёткое сглаживание текста на всех экранах */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
